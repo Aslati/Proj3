@@ -1,0 +1,11 @@
+C:/Users/joaja/Proj3/CMakeFiles/_PROJ3.dir
+C:/Users/joaja/Proj3/CMakeFiles/INSTALL.dir
+C:/Users/joaja/Proj3/CMakeFiles/ALL_BUILD.dir
+C:/Users/joaja/Proj3/CMakeFiles/ZERO_CHECK.dir
+C:/Users/joaja/Proj3/matplotplusplus/CMakeFiles/INSTALL.dir
+C:/Users/joaja/Proj3/matplotplusplus/CMakeFiles/ALL_BUILD.dir
+C:/Users/joaja/Proj3/matplotplusplus/source/CMakeFiles/INSTALL.dir
+C:/Users/joaja/Proj3/matplotplusplus/source/3rd_party/CMakeFiles/nodesoup.dir
+C:/Users/joaja/Proj3/matplotplusplus/source/3rd_party/CMakeFiles/INSTALL.dir
+C:/Users/joaja/Proj3/matplotplusplus/source/matplot/CMakeFiles/matplot.dir
+C:/Users/joaja/Proj3/matplotplusplus/source/matplot/CMakeFiles/INSTALL.dir
