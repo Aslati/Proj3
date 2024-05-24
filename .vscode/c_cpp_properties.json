@@ -8,7 +8,7 @@
                 "C:/Users/joaja/Proj3/extern/pybind11/include/pybind11",
                 "C:/Python312/Lib/site-packages/pybind11/include/pybind11",
                 "C:/Users/joaja/Proj3/matplotplusplus/source/**",
-                "C:/Users/joaja/Proj3/**"
+                "C:/Users/joaja/Proj3/"
             ],
             "defines": [
                 "_DEBUG",

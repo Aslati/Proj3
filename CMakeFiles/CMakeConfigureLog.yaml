@@ -7650,3 +7650,906 @@ events:
         
       exitCode: 1
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.6.3+07e294721 for .NET Framework
+      Build started 24/05/2024 01:30:13.
+      
+      Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.75
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/joaja/Proj3/CMakeFiles/3.29.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.6.3+07e294721 for .NET Framework
+      Build started 24/05/2024 01:30:15.
+      
+      Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\3.29.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.49
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/joaja/Proj3/CMakeFiles/3.29.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-xstac5"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-xstac5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-xstac5'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_86e9f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 01:30:16.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xstac5\\cmTC_86e9f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_86e9f.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xstac5\\Debug\\".
+          Creating directory "cmTC_86e9f.dir\\Debug\\cmTC_86e9f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_86e9f.dir\\Debug\\cmTC_86e9f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_86e9f.dir\\Debug\\\\" /Fd"cmTC_86e9f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Python312\\Lib\\site-packages\\cmake\\data\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          CMakeCCompilerABI.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_86e9f.dir\\Debug\\\\" /Fd"cmTC_86e9f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Python312\\Lib\\site-packages\\cmake\\data\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xstac5\\Debug\\cmTC_86e9f.exe" /INCREMENTAL /ILK:"cmTC_86e9f.dir\\Debug\\cmTC_86e9f.ilk" /NOLOGO /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-xstac5/Debug/cmTC_86e9f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-xstac5/Debug/cmTC_86e9f.lib" /MACHINE:X64  /machine:x64 cmTC_86e9f.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_86e9f.vcxproj -> C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xstac5\\Debug\\cmTC_86e9f.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xstac5\\Debug\\cmTC_86e9f.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_86e9f.dir\\Debug\\cmTC_86e9f.tlog\\cmTC_86e9f.write.1u.tlog" "cmTC_86e9f.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xstac5\\Debug\\cmTC_86e9f.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_86e9f.dir\\Debug\\cmTC_86e9f.tlog\\cmTC_86e9f.write.1u.tlog" "cmTC_86e9f.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xstac5\\Debug\\cmTC_86e9f.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_86e9f.dir\\Debug\\cmTC_86e9f.tlog\\cmTC_86e9f.write.1u.tlog" "cmTC_86e9f.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_86e9f.dir\\Debug\\cmTC_86e9f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_86e9f.dir\\Debug\\cmTC_86e9f.tlog\\cmTC_86e9f.lastbuildstate".
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xstac5\\cmTC_86e9f.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.44
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.36.32537.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-xfgpyd"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-xfgpyd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-xfgpyd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f9590.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 01:30:18.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xfgpyd\\cmTC_f9590.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f9590.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xfgpyd\\Debug\\".
+          Creating directory "cmTC_f9590.dir\\Debug\\cmTC_f9590.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f9590.dir\\Debug\\cmTC_f9590.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f9590.dir\\Debug\\\\" /Fd"cmTC_f9590.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Python312\\Lib\\site-packages\\cmake\\data\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          CMakeCXXCompilerABI.cpp
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f9590.dir\\Debug\\\\" /Fd"cmTC_f9590.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Python312\\Lib\\site-packages\\cmake\\data\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xfgpyd\\Debug\\cmTC_f9590.exe" /INCREMENTAL /ILK:"cmTC_f9590.dir\\Debug\\cmTC_f9590.ilk" /NOLOGO /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-xfgpyd/Debug/cmTC_f9590.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-xfgpyd/Debug/cmTC_f9590.lib" /MACHINE:X64  /machine:x64 cmTC_f9590.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_f9590.vcxproj -> C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xfgpyd\\Debug\\cmTC_f9590.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xfgpyd\\Debug\\cmTC_f9590.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_f9590.dir\\Debug\\cmTC_f9590.tlog\\cmTC_f9590.write.1u.tlog" "cmTC_f9590.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xfgpyd\\Debug\\cmTC_f9590.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_f9590.dir\\Debug\\cmTC_f9590.tlog\\cmTC_f9590.write.1u.tlog" "cmTC_f9590.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xfgpyd\\Debug\\cmTC_f9590.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_f9590.dir\\Debug\\cmTC_f9590.tlog\\cmTC_f9590.write.1u.tlog" "cmTC_f9590.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_f9590.dir\\Debug\\cmTC_f9590.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f9590.dir\\Debug\\cmTC_f9590.tlog\\cmTC_f9590.lastbuildstate".
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-xfgpyd\\cmTC_f9590.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.43
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.36.32537.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindBLAS.cmake:372 (check_function_exists)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindBLAS.cmake:416 (check_blas_libraries)"
+      - "CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for sgemm_"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-mdf72t"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-mdf72t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-mdf72t'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f4dd2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 01:30:21.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\cmTC_f4dd2.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f4dd2.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\Debug\\".
+          Creating directory "cmTC_f4dd2.dir\\Debug\\cmTC_f4dd2.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f4dd2.dir\\Debug\\cmTC_f4dd2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f4dd2.dir\\Debug\\\\" /Fd"cmTC_f4dd2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          CheckFunctionExists.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f4dd2.dir\\Debug\\\\" /Fd"cmTC_f4dd2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\Debug\\cmTC_f4dd2.exe" /INCREMENTAL /ILK:"cmTC_f4dd2.dir\\Debug\\cmTC_f4dd2.ilk" /NOLOGO /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-mdf72t/Debug/cmTC_f4dd2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-mdf72t/Debug/cmTC_f4dd2.lib" /MACHINE:X64  /machine:x64 cmTC_f4dd2.dir\\Debug\\CheckFunctionExists.obj
+          cmTC_f4dd2.vcxproj -> C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\Debug\\cmTC_f4dd2.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\Debug\\cmTC_f4dd2.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_f4dd2.dir\\Debug\\cmTC_f4dd2.tlog\\cmTC_f4dd2.write.1u.tlog" "cmTC_f4dd2.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\Debug\\cmTC_f4dd2.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_f4dd2.dir\\Debug\\cmTC_f4dd2.tlog\\cmTC_f4dd2.write.1u.tlog" "cmTC_f4dd2.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\Debug\\cmTC_f4dd2.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_f4dd2.dir\\Debug\\cmTC_f4dd2.tlog\\cmTC_f4dd2.write.1u.tlog" "cmTC_f4dd2.dir\\Debug\\vcpkg.applocal.log"
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\Debug\\openblas.dll
+        FinalizeBuildStatus:
+          Deleting file "cmTC_f4dd2.dir\\Debug\\cmTC_f4dd2.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f4dd2.dir\\Debug\\cmTC_f4dd2.tlog\\cmTC_f4dd2.lastbuildstate".
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-mdf72t\\cmTC_f4dd2.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.56
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindLAPACK.cmake:325 (_lapack_find_dependency)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-h3ryye"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-h3ryye"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-h3ryye'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0360c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 01:30:23.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-h3ryye\\cmTC_0360c.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_0360c.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-h3ryye\\Debug\\".
+          Creating directory "cmTC_0360c.dir\\Debug\\cmTC_0360c.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_0360c.dir\\Debug\\cmTC_0360c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0360c.dir\\Debug\\\\" /Fd"cmTC_0360c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-h3ryye\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          src.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0360c.dir\\Debug\\\\" /Fd"cmTC_0360c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-h3ryye\\src.c"
+        C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-h3ryye\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-h3ryye\\cmTC_0360c.vcxproj]
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-h3ryye\\cmTC_0360c.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-h3ryye\\cmTC_0360c.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-h3ryye\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-h3ryye\\cmTC_0360c.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.44
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindLAPACK.cmake:325 (_lapack_find_dependency)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-85yu2y"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-85yu2y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-85yu2y'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c9915.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 01:30:24.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-85yu2y\\cmTC_c9915.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_c9915.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-85yu2y\\Debug\\".
+          Creating directory "cmTC_c9915.dir\\Debug\\cmTC_c9915.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_c9915.dir\\Debug\\cmTC_c9915.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c9915.dir\\Debug\\\\" /Fd"cmTC_c9915.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-85yu2y\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          CheckFunctionExists.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c9915.dir\\Debug\\\\" /Fd"cmTC_c9915.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-85yu2y\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-85yu2y\\Debug\\cmTC_c9915.exe" /INCREMENTAL /ILK:"cmTC_c9915.dir\\Debug\\cmTC_c9915.ilk" /NOLOGO /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-85yu2y/Debug/cmTC_c9915.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-85yu2y/Debug/cmTC_c9915.lib" /MACHINE:X64  /machine:x64 cmTC_c9915.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-85yu2y\\cmTC_c9915.vcxproj]
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-85yu2y\\cmTC_c9915.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-85yu2y\\cmTC_c9915.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-85yu2y\\cmTC_c9915.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.57
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindLAPACK.cmake:325 (_lapack_find_dependency)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-s6c9fe"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-s6c9fe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-s6c9fe'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_40bfa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 01:30:25.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-s6c9fe\\cmTC_40bfa.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_40bfa.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-s6c9fe\\Debug\\".
+          Creating directory "cmTC_40bfa.dir\\Debug\\cmTC_40bfa.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_40bfa.dir\\Debug\\cmTC_40bfa.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_40bfa.dir\\Debug\\\\" /Fd"cmTC_40bfa.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-s6c9fe\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          CheckFunctionExists.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_40bfa.dir\\Debug\\\\" /Fd"cmTC_40bfa.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-s6c9fe\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-s6c9fe\\Debug\\cmTC_40bfa.exe" /INCREMENTAL /ILK:"cmTC_40bfa.dir\\Debug\\cmTC_40bfa.ilk" /NOLOGO /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-s6c9fe/Debug/cmTC_40bfa.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-s6c9fe/Debug/cmTC_40bfa.lib" /MACHINE:X64  /machine:x64 cmTC_40bfa.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-s6c9fe\\cmTC_40bfa.vcxproj]
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-s6c9fe\\cmTC_40bfa.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-s6c9fe\\cmTC_40bfa.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-s6c9fe\\cmTC_40bfa.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.57
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindLAPACK.cmake:220 (check_function_exists)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/FindLAPACK.cmake:397 (check_lapack_libraries)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for cheev_"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-ase22c"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-ase22c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "LAPACK_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-ase22c'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_28252.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 01:30:25.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\cmTC_28252.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_28252.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\".
+          Creating directory "cmTC_28252.dir\\Debug\\cmTC_28252.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_28252.dir\\Debug\\cmTC_28252.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=cheev_ /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_28252.dir\\Debug\\\\" /Fd"cmTC_28252.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          CheckFunctionExists.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=cheev_ /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_28252.dir\\Debug\\\\" /Fd"cmTC_28252.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\cmTC_28252.exe" /INCREMENTAL /ILK:"cmTC_28252.dir\\Debug\\cmTC_28252.ilk" /NOLOGO /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-ase22c/Debug/cmTC_28252.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-ase22c/Debug/cmTC_28252.lib" /MACHINE:X64  /machine:x64 cmTC_28252.dir\\Debug\\CheckFunctionExists.obj
+          cmTC_28252.vcxproj -> C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\cmTC_28252.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\cmTC_28252.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_28252.dir\\Debug\\cmTC_28252.tlog\\cmTC_28252.write.1u.tlog" "cmTC_28252.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\cmTC_28252.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_28252.dir\\Debug\\cmTC_28252.tlog\\cmTC_28252.write.1u.tlog" "cmTC_28252.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\cmTC_28252.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_28252.dir\\Debug\\cmTC_28252.tlog\\cmTC_28252.write.1u.tlog" "cmTC_28252.dir\\Debug\\vcpkg.applocal.log"
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\liblapack.dll
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\libgcc_s_seh-1.dll
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\libwinpthread-1.dll
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\libgfortran-5.dll
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\libquadmath-0.dll
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\Debug\\openblas.dll
+        FinalizeBuildStatus:
+          Deleting file "cmTC_28252.dir\\Debug\\cmTC_28252.tlog\\unsuccessfulbuild".
+          Touching "cmTC_28252.dir\\Debug\\cmTC_28252.tlog\\cmTC_28252.lastbuildstate".
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ase22c\\cmTC_28252.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:02.09
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "matplotplusplus/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-alzred"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-alzred"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/joaja/Proj3/matplotplusplus/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-alzred'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6fc9e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 01:30:28.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_6fc9e.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\Debug\\".
+          Creating directory "cmTC_6fc9e.dir\\Debug\\cmTC_6fc9e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_6fc9e.dir\\Debug\\cmTC_6fc9e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6fc9e.dir\\Debug\\\\" /Fd"cmTC_6fc9e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          src.cxx
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6fc9e.dir\\Debug\\\\" /Fd"cmTC_6fc9e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx"
+        C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+        C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+        C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+        C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+        C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+        C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-alzred\\cmTC_6fc9e.vcxproj]
+        
+            0 Warning(s)
+            6 Error(s)
+        
+        Time Elapsed 00:00:00.44
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/GenerateExportHeader.cmake:269 (_check_cxx_compiler_attribute)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "matplotplusplus/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-jalyc0"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-jalyc0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/joaja/Proj3/matplotplusplus/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-jalyc0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_88f95.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 01:30:29.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-jalyc0\\cmTC_88f95.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_88f95.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-jalyc0\\Debug\\".
+          Creating directory "cmTC_88f95.dir\\Debug\\cmTC_88f95.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_88f95.dir\\Debug\\cmTC_88f95.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88f95.dir\\Debug\\\\" /Fd"cmTC_88f95.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-jalyc0\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          src.cxx
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88f95.dir\\Debug\\\\" /Fd"cmTC_88f95.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-jalyc0\\src.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-jalyc0\\Debug\\cmTC_88f95.exe" /INCREMENTAL /ILK:"cmTC_88f95.dir\\Debug\\cmTC_88f95.ilk" /NOLOGO /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-jalyc0/Debug/cmTC_88f95.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-jalyc0/Debug/cmTC_88f95.lib" /MACHINE:X64  /machine:x64 cmTC_88f95.dir\\Debug\\src.obj
+          cmTC_88f95.vcxproj -> C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-jalyc0\\Debug\\cmTC_88f95.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-jalyc0\\Debug\\cmTC_88f95.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_88f95.dir\\Debug\\cmTC_88f95.tlog\\cmTC_88f95.write.1u.tlog" "cmTC_88f95.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-jalyc0\\Debug\\cmTC_88f95.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_88f95.dir\\Debug\\cmTC_88f95.tlog\\cmTC_88f95.write.1u.tlog" "cmTC_88f95.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-jalyc0\\Debug\\cmTC_88f95.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_88f95.dir\\Debug\\cmTC_88f95.tlog\\cmTC_88f95.write.1u.tlog" "cmTC_88f95.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_88f95.dir\\Debug\\cmTC_88f95.tlog\\unsuccessfulbuild".
+          Touching "cmTC_88f95.dir\\Debug\\cmTC_88f95.tlog\\cmTC_88f95.lastbuildstate".
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-jalyc0\\cmTC_88f95.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.47
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "matplotplusplus/source/matplot/CMakeLists.txt:141 (check_symbol_exists)"
+    checks:
+      - "Looking for __fbufsize"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-r4hm2n"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-r4hm2n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/joaja/Proj3/matplotplusplus/cmake"
+    buildResult:
+      variable: "HAVE_FBUFSIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-r4hm2n'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_42990.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 01:30:30.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-r4hm2n\\cmTC_42990.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_42990.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-r4hm2n\\Debug\\".
+          Creating directory "cmTC_42990.dir\\Debug\\cmTC_42990.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_42990.dir\\Debug\\cmTC_42990.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_42990.dir\\Debug\\\\" /Fd"cmTC_42990.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-r4hm2n\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          CheckSymbolExists.c
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_42990.dir\\Debug\\\\" /Fd"cmTC_42990.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-r4hm2n\\CheckSymbolExists.c"
+        C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-r4hm2n\\CheckSymbolExists.c(2,10): fatal  error C1083: Cannot open include file: 'stdio_ext.h': No such file or directory [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-r4hm2n\\cmTC_42990.vcxproj]
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-r4hm2n\\cmTC_42990.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-r4hm2n\\cmTC_42990.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-r4hm2n\\CheckSymbolExists.c(2,10): fatal  error C1083: Cannot open include file: 'stdio_ext.h': No such file or directory [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-r4hm2n\\cmTC_42990.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.44
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Python312/Lib/site-packages/cmake/data/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "C:/Python312/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:287 (check_cxx_compiler_flag)"
+      - "C:/Python312/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:354 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "C:/Python312/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:399 (_pybind11_generate_lto)"
+      - "C:/Python312/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:250 (include)"
+      - "CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Performing Test HAS_MSVC_GL_LTCG"
+    directories:
+      source: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-ht1yvp"
+      binary: "C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-ht1yvp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAS_MSVC_GL_LTCG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-ht1yvp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_db2d2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 24/05/2024 19:44:06.
+        
+        Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\cmTC_db2d2.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_db2d2.dir\\Debug\\".
+          Creating directory "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\Debug\\".
+          Creating directory "cmTC_db2d2.dir\\Debug\\cmTC_db2d2.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_db2d2.dir\\Debug\\cmTC_db2d2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_db2d2.dir\\Debug\\\\" /Fd"cmTC_db2d2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          src.cxx
+          cl /c /I"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_db2d2.dir\\Debug\\\\" /Fd"cmTC_db2d2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\src.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\Debug\\cmTC_db2d2.exe" /INCREMENTAL /ILK:"cmTC_db2d2.dir\\Debug\\cmTC_db2d2.ilk" /NOLOGO /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\manual-link" "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-ht1yvp/Debug/cmTC_db2d2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/joaja/Proj3/CMakeFiles/CMakeScratch/TryCompile-ht1yvp/Debug/cmTC_db2d2.lib" /MACHINE:X64  /machine:x64 cmTC_db2d2.dir\\Debug\\src.obj
+        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\cmTC_db2d2.vcxproj]
+          Generating code
+          Finished generating code
+          cmTC_db2d2.vcxproj -> C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\Debug\\cmTC_db2d2.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\Debug\\cmTC_db2d2.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_db2d2.dir\\Debug\\cmTC_db2d2.tlog\\cmTC_db2d2.write.1u.tlog" "cmTC_db2d2.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\Debug\\cmTC_db2d2.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_db2d2.dir\\Debug\\cmTC_db2d2.tlog\\cmTC_db2d2.write.1u.tlog" "cmTC_db2d2.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\joaja\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\Debug\\cmTC_db2d2.exe" "C:\\Users\\joaja\\vcpkg\\installed\\x64-windows\\bin" "cmTC_db2d2.dir\\Debug\\cmTC_db2d2.tlog\\cmTC_db2d2.write.1u.tlog" "cmTC_db2d2.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_db2d2.dir\\Debug\\cmTC_db2d2.tlog\\unsuccessfulbuild".
+          Touching "cmTC_db2d2.dir\\Debug\\cmTC_db2d2.tlog\\cmTC_db2d2.lastbuildstate".
+        Done Building Project "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\cmTC_db2d2.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\cmTC_db2d2.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\joaja\\Proj3\\CMakeFiles\\CMakeScratch\\TryCompile-ht1yvp\\cmTC_db2d2.vcxproj]
+        
+            1 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.72
+        
+      exitCode: 0
+...

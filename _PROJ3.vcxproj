@@ -34,21 +34,25 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -61,32 +65,28 @@
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\joaja\Proj3\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_PROJ3.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_PROJ3.cp312-win_amd64</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_PROJ3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.pyd</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\joaja\Proj3\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_PROJ3.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_PROJ3.cp312-win_amd64</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_PROJ3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.pyd</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\joaja\Proj3\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">_PROJ3.dir\MinSizeRel\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">_PROJ3.cp312-win_amd64</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">_PROJ3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.pyd</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\joaja\Proj3\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">_PROJ3.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">_PROJ3.cp312-win_amd64</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">_PROJ3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.pyd</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Python312/include" /external:I "C:/Python312/Lib/site-packages/pybind11/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -94,21 +94,20 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;VERSION_INFO=;PROJECT_BINARY_DIR="C:/Users/joaja/Proj3";NOMINMAX;MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP;CMAKE_INTDIR="Debug";_PROJ3_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;VERSION_INFO=;CMAKE_INTDIR="Debug";_PROJ3_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;VERSION_INFO=;PROJECT_BINARY_DIR=\"C:/Users/joaja/Proj3\";NOMINMAX;MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP;CMAKE_INTDIR=\"Debug\";_PROJ3_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;VERSION_INFO=;CMAKE_INTDIR=\"Debug\";_PROJ3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -116,7 +115,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Python312\libs\python312.lib;matplotplusplus\source\matplot\Debug\matplot.lib;AudioFile.lib;gdi32.lib;matplotplusplus\source\3rd_party\Debug\nodesoup.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Python312\libs\python312.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -131,29 +130,28 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Python312/include" /external:I "C:/Python312/Lib/site-packages/pybind11/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;PROJECT_BINARY_DIR="C:/Users/joaja/Proj3";NOMINMAX;MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP;CMAKE_INTDIR="Release";_PROJ3_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;CMAKE_INTDIR="Release";_PROJ3_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;PROJECT_BINARY_DIR=\"C:/Users/joaja/Proj3\";NOMINMAX;MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP;CMAKE_INTDIR=\"Release\";_PROJ3_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;CMAKE_INTDIR=\"Release\";_PROJ3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -161,7 +159,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Python312\libs\python312.lib;matplotplusplus\source\matplot\Release\matplot.lib;AudioFile.lib;gdi32.lib;matplotplusplus\source\3rd_party\Release\nodesoup.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Python312\libs\python312.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -176,29 +174,28 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Python312/include" /external:I "C:/Python312/Lib/site-packages/pybind11/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;PROJECT_BINARY_DIR="C:/Users/joaja/Proj3";NOMINMAX;MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP;CMAKE_INTDIR="MinSizeRel";_PROJ3_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;CMAKE_INTDIR="MinSizeRel";_PROJ3_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;PROJECT_BINARY_DIR=\"C:/Users/joaja/Proj3\";NOMINMAX;MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP;CMAKE_INTDIR=\"MinSizeRel\";_PROJ3_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;CMAKE_INTDIR=\"MinSizeRel\";_PROJ3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -206,7 +203,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Python312\libs\python312.lib;matplotplusplus\source\matplot\MinSizeRel\matplot.lib;AudioFile.lib;gdi32.lib;matplotplusplus\source\3rd_party\MinSizeRel\nodesoup.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Python312\libs\python312.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -221,28 +218,27 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Python312/include" /external:I "C:/Python312/Lib/site-packages/pybind11/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;PROJECT_BINARY_DIR="C:/Users/joaja/Proj3";NOMINMAX;MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP;CMAKE_INTDIR="RelWithDebInfo";_PROJ3_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;CMAKE_INTDIR="RelWithDebInfo";_PROJ3_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;PROJECT_BINARY_DIR=\"C:/Users/joaja/Proj3\";NOMINMAX;MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP;CMAKE_INTDIR=\"RelWithDebInfo\";_PROJ3_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VERSION_INFO=;CMAKE_INTDIR=\"RelWithDebInfo\";_PROJ3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\matplotplusplus\source;C:\Users\joaja\Proj3\matplotplusplus\source\matplot;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\joaja\Proj3\audio;C:\Python312\include;C:\Python312\Lib\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -250,7 +246,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Python312\libs\python312.lib;matplotplusplus\source\matplot\RelWithDebInfo\matplot.lib;AudioFile.lib;gdi32.lib;matplotplusplus\source\3rd_party\RelWithDebInfo\nodesoup.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Python312\libs\python312.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -268,7 +264,7 @@
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/joaja/Proj3/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/joaja/Proj3 -BC:/Users/joaja/Proj3 --check-stamp-file C:/Users/joaja/Proj3/CMakeFiles/generate.stamp
+C:\Python312\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/joaja/Proj3 -BC:/Users/joaja/Proj3 --check-stamp-file C:/Users/joaja/Proj3/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -276,12 +272,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Common.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Config.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11ConfigVersion.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11NewTools.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Targets.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindBLAS.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindLAPACK.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPython.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindThreads.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Common.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Config.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11ConfigVersion.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11NewTools.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Targets.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\joaja\Proj3\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/joaja/Proj3/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/joaja/Proj3 -BC:/Users/joaja/Proj3 --check-stamp-file C:/Users/joaja/Proj3/CMakeFiles/generate.stamp
+C:\Python312\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/joaja/Proj3 -BC:/Users/joaja/Proj3 --check-stamp-file C:/Users/joaja/Proj3/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -289,12 +285,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Common.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Config.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11ConfigVersion.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11NewTools.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Targets.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindBLAS.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindLAPACK.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPython.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindThreads.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Common.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Config.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11ConfigVersion.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11NewTools.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Targets.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\joaja\Proj3\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/joaja/Proj3/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/joaja/Proj3 -BC:/Users/joaja/Proj3 --check-stamp-file C:/Users/joaja/Proj3/CMakeFiles/generate.stamp
+C:\Python312\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/joaja/Proj3 -BC:/Users/joaja/Proj3 --check-stamp-file C:/Users/joaja/Proj3/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -302,12 +298,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Common.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Config.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11ConfigVersion.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11NewTools.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Targets.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindBLAS.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindLAPACK.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPython.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindThreads.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Common.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Config.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11ConfigVersion.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11NewTools.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Targets.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\joaja\Proj3\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/joaja/Proj3/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/joaja/Proj3 -BC:/Users/joaja/Proj3 --check-stamp-file C:/Users/joaja/Proj3/CMakeFiles/generate.stamp
+C:\Python312\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/joaja/Proj3 -BC:/Users/joaja/Proj3 --check-stamp-file C:/Users/joaja/Proj3/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -315,13 +311,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Common.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Config.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11ConfigVersion.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11NewTools.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Targets.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindBLAS.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindLAPACK.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPython.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\FindThreads.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Common.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Config.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11ConfigVersion.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11NewTools.cmake;C:\Python312\Lib\site-packages\pybind11\share\cmake\pybind11\pybind11Targets.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;C:\Users\joaja\Proj3\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\joaja\Proj3\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\joaja\Proj3\src\main.cpp" />
+    <ClCompile Include="C:\Users\joaja\Proj3\src\PROJ3\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\joaja\Proj3\ZERO_CHECK.vcxproj">
@@ -329,14 +325,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-    <ProjectReference Include="C:\Users\joaja\Proj3\matplotplusplus\source\matplot\matplot.vcxproj">
-      <Project>{82DB69E8-C7AA-3267-BB4E-A6008F872951}</Project>
-      <Name>matplot</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\Users\joaja\Proj3\matplotplusplus\source\3rd_party\nodesoup.vcxproj">
-      <Project>{B2549383-B6A1-30D6-95EE-67D5B433A977}</Project>
-      <Name>nodesoup</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
